@@ -1,0 +1,149 @@
+ 25
+0
+
+
+
+
+
+ 
+Message List
+Jump (Ctrl + J)
+25 new messages since 7:46 PM on September 17th
+Mark as read
+Loading history...
+
+Max - TA [8:34 PM]
+1) create repo called <username.github.io>
+2) make sure README.md and index.html are present.
+3) It is important that the file is called index.html; if it is not, it will host your readme.
+4) Github will automatically host this repo username.github.io by default.
+
+The way that you will host most of your repos will simply be to make the repo, make sure there is an index.html present, and then go to the settings tab ----> scroll down to github pages ----> host your master branch ----> save.
+
+Byron [8:36 PM]
+https://byronproberts.github.io
+
+Morgan Kennedy [8:36 PM]
+violetce.github.io
+
+Liz Sabogal [8:36 PM]
+https://lsabogal25.github.io/
+
+Iman [8:38 PM]
+imalik18.github.io
+
+Beau Simpson [8:38 PM]
+https://beausimpson.github.io/
+
+jessica oliver [8:39 PM]
+https://jnoliver88.github.io/
+
+Brett Davis [8:39 PM]
+https://bdavis127.github.io/
+
+Iman [8:39 PM]
+https://imalik18.github.io/
+
+Michael Preston [8:40 PM]
+https://mikepreston17.github.io/
+
+Max - TA [8:40 PM]
+@Shunn ^^^^^ click those, see what other peeps put
+
+Chase [8:41 PM]
+https://cjenkins3.github.io/
+
+Monroe Howard [8:43 PM]
+https://mhoward1934.github.io/
+
+Katie Higgins [8:44 PM]
+https://kat9513.github.io/
+
+Max - TA [8:46 PM]
+super job everyone.
+
+Shunn [8:49 PM]
+https://shunnone.github.io/
+
+Jenean [8:50 PM]
+https://jenobug.github.io/
+
+Max - TA [8:53 PM]
+**Instructions:** `06-GithubPagesProject/README.md`
+
+Roger Le [8:53 PM]
+Pick Student 
+<!DOCTYPE html>
+<html>
+​
+<head>
+  <title>Name Selector</title>
+  <!-- jquery link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+​
+<body>
+  <div id="studentSelector">
+    <h1 id="studentName">SMASH DAT BUTTON!</h1>
+    <br />
+    <button onclick="pickStudent()">Pick Student!</button>
+  </div>
+  <div id="studentList">
+  </div>
+</body>
+<style>
+	.studentListItm {
+		border: 2px solid black;
+		margin: 5px;
+	}
+</style>
+<script type="text/javascript">
+const list = ["Andrasta Seatts",
+  "Beau Simpson",
+  "Brett Davis",
+  "Byron Roberts",
+  "CC Stinson",
+  "Chase Jenkins",
+  "Daniel Reynolds",
+  "Elizabeth Sabogal",
+  "Felice Ross",
+  "Iman Malik",
+  "Jenean Qaddura",
+  "Jessica Oliver",
+  "Katherine Higgins",
+  "Michael Preston",
+  "Monroe Howard II",
+  "Morgan Kennedy",
+  "Peter Kimani",
+  "Scott Wagner"
+];
+getRandomInt = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+pickStudent = () => {
+	const picked = list[getRandomInt(0, list.length - 1)];
+	$("#studentName").text(picked);
+}
+removeStud = (id) => {
+	list.splice(id, 1);
+	buildList();
+}
+buildList = () => {
+	$("#studentList").empty();
+  list.forEach((elem, id) => {
+    let newNameElem = $("<span class='studentListItm'>" + elem + " <button onclick='removeStud(" + id + ")'>x</button></span>");
+    $("#studentList").append(newNameElem)
+  })
+}
+window.onload = () => {
+	buildList();
+​
+}
+</script>
+​
+</html>
+Collapse 
+
+Message Input
+
+Message #02-class-activities
